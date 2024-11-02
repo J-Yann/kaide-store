@@ -1,0 +1,94 @@
+.header-main {    
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: row w;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.title-main {    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    letter-spacing: -1.5px; 
+    cursor: pointer;
+    transition: all 1s ease; 
+}
+.title-main:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.title-main-kaide {
+    color: orange;
+    font-size:80px;
+}
+
+.title-main-store {
+    color: gold;
+    font-size:40px;
+}
+
+.menu-list ul {
+    display: flex;
+    justify-content:space-around;
+    list-style:none;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+}
+.menu-list a {
+    padding: 10px 10px;
+    color: rgb(241, 180, 120);
+    font-weight: 400;
+    font-size: 28px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.menu-list a:hover {
+    box-shadow:#ffa07a 0 2px 6px 0px;
+    filter: brightness(1.1);
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex: 1;
+}
+
+.menu-list a span {
+    padding: 5px 10px;    
+    border-radius: 4px;
+    color: rgb(241, 180, 120);
+}
+
+.search-form{
+    height: 44px;
+    display: flex;
+}
+
+.search-form input{
+    box-sizing: border-box;
+    height: 56px;
+    padding: 28px;
+    flex:1;
+    background-color: lightsalmon;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+}
+
+.search-form button{
+    width: auto;
+    height: 56px;
+    background-color: orange;
+    border:none;
+    color: #fff;
+    font-size: 22px;
+    transition: all -3s ease;
+}
+.search-form button:hover{
+    filter: brightness(1.2);
+    cursor:pointer;
+}

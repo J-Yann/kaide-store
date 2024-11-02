@@ -1,0 +1,42 @@
+address ul{
+    display:flex;
+    column-gap:40px;
+    list-style:none;
+    flex: 1 1 auto;
+}
+i{
+    font-size:20px;
+}
+footer{
+    background-color:lightsalmon;
+    color:white;
+    font-size:18px;
+}
+.about{
+    display: flex;
+    flex:1 1 auto;
+    flex-flow: row wrap;
+    justify-content:first baseline;
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.about-title{
+    font-weight:bold;
+}
+.about-title-description{
+    font-size:16px;
+}
+.contatos{
+    font-size:15px;
+}
+.contatos-title{
+    font-weight:bold;
+    font-size:25px;
+}
+.copy{
+    background-color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:20px 20px;
+    text-align: center;
+    font-weight: bolder;    
+}

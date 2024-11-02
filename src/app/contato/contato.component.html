@@ -1,0 +1,69 @@
+<!--
+    Para os inputs
+
+    [class.valid]="inputs_forms.controls['name'].valid"
+    [class.invalid]="inputs_forms.controls['name'].invalid && (inputs_forms.controls['name'].touched || inputs_forms.controls['name'].dirty)"
+
+    <input type="tel" placeholder="(00) 00 0000-0000" formControlName="tell" mask="(00) 0 0000-0000"/>
+
+    Consulte em extras 2 para saber mais sobre essas funções!
+-->
+
+<h2 class="title-conato">Fale com gente!</h2>
+<h3 class="title-subtitle-conato">Preencha os todos os campos para prosseguir</h3>
+<section>
+    <!-- Veja em extras 2 para saber mais! -->
+    <form [formGroup]="inputs_forms" (ngSubmit)="enviarFormulario()">
+        <input type="text" placeholder="Digite o seu nome!" formControlName="name" />
+        <div *ngIf="(inputs_forms.controls['name'].invalid) && ((inputs_forms.controls['name'].touched) || (inputs_forms.controls['name'].dirty))">
+            <small class="erro-mensage" *ngIf="inputs_forms.controls['name'].hasError('minlength')">
+                Deve possuir no minimo 4 caracteres.
+            </small>
+            <small class="erro-mensage" *ngIf="inputs_forms.controls['name'].hasError('required')">
+                Esse campo é obrigátorio!
+            </small>
+        </div>
+        <input type="assunto" placeholder="Digite o assunto" formControlName="assunto" />
+        <div *ngIf="(inputs_forms.controls['assunto'].invalid) && ((inputs_forms.controls['assunto'].touched) || (inputs_forms.controls['assunto'].dirty))">
+            <small class="erro-mensage" *ngIf="inputs_forms.controls['assunto'].hasError('minlength')">
+                Deve possuir no minimo 6 caracteres.
+            </small>
+            <small class="erro-mensage" *ngIf="inputs_forms.controls['assunto'].hasError('required')">
+                Esse campo é obrigátorio!
+            </small>
+        </div>
+        <input type="tel" placeholder="(00) 00 0000-0000" formControlName="tell"/>
+        <div *ngIf="(inputs_forms.controls['tell'].invalid) && ((inputs_forms.controls['tell'].touched) || (inputs_forms.controls['tell'].dirty))">
+            <small class="erro-mensage" *ngIf="inputs_forms.controls['tell'].hasError('minlength')">
+                Deve possuir no minimo 11 caracteres.
+            </small>
+            <small class="erro-mensage" *ngIf="inputs_forms.controls['tell'].hasError('required')">
+                Esse campo é obrigátorio!
+            </small>
+        </div>
+        <input type="email" placeholder="Digite o seu email" formControlName="email"/>
+        <div *ngIf="(inputs_forms.controls['email'].invalid) && ((inputs_forms.controls['email'].touched) || (inputs_forms.controls['email'].dirty))">
+            <small class="erro-mensage" *ngIf="inputs_forms.controls['email'].hasError('email')">
+                Deve ser um email válido!
+            </small>
+            <small class="erro-mensage" *ngIf="inputs_forms.controls['email'].hasError('required')">
+                Esse campo é obrigátorio!
+            </small>
+        </div>
+        <textarea maxlength="300" placeholder="Comente aqui!" rows="4" formControlName="mensage"></textarea>
+        <div *ngIf="(inputs_forms.controls['mensage'].invalid) && ((inputs_forms.controls['mensage'].touched) || (inputs_forms.controls['mensage'].dirty))">
+            <small class="erro-mensage" *ngIf="inputs_forms.controls['mensage'].hasError('minlength')">
+                Deve possuir no minimo 20 caracteres.
+            </small>
+            <small class="erro-mensage" *ngIf="inputs_forms.controls['mensage'].hasError('required')">
+                Esse campo é obrigátorio!
+            </small>
+        </div>
+        <button [disabled]="inputs_forms.invalid" type="submit">Enviar</button>
+    </form>
+    <address>
+        <h3 class="title-subtitle-conato-addresss">Nossa cidade para contato fisíco</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1017676.7503831435!2d-47.65271121795984!3d-4.889381671533966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92c5f45b28bb04f3%3A0x99f69a0a4ecd9b6b!2zQcOnYWlsw6JuZGlhLCBNQSwgNjU5MzAtMDAw!5e0!3m2!1spt-BR!2sbr!4v1730381711059!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Açailândia - MA, CEP: 65930-000</p>
+    </address>
+</section>

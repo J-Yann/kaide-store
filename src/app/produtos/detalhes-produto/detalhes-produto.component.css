@@ -1,0 +1,112 @@
+section{
+    margin-bottom:20px 0;
+}
+p, .info-products-title-quantidade-name{
+    color: orange;
+    font-size:20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    box-sizing: border-box;
+    width:100px;
+    height:40px;
+    background-color:lightsalmon;
+    border:none;
+    color:white;
+    font-size:20px;
+}
+button:hover{
+    filter:brightness(1.1);
+    cursor:pointer;
+}
+input{
+    box-sizing:border-box;
+    margin: 0 3px;
+    width:50px;
+    height:40px;
+    padding:5px;
+    background-color:lightsalmon;
+    border:none;
+    border-radius:10px;
+    text-align:center;
+    color:white;
+    font-size:20px;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:none;
+}
+/*Para firefox*/
+input[type=number]{
+    -moz-appearance:none;
+}
+.conteiner{
+    display:flex;
+    column-gap:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: rgb(255, 160, 122, 0.5) 0px 2px 10px 1px;
+}
+.img-conteneir, img{
+    width:350px;
+    height:350px;
+    align-self: center;
+
+}
+.info-products-conteneir{
+    padding:15px;
+    flex:1;
+}
+.info-products-title{
+    color:orange;
+    font-size:35px;
+    font-weight:bold;
+}
+.title-info-style{
+    color: rgba(220, 154, 31, 0.932);
+    font-weight:400;
+    font-size:32px;
+}
+.info-products-title-subtitle{
+    color:orange;
+    font-weight:bold;
+    font-size:20px;
+}
+.subtitle-info-style{
+    color:rgba(201, 157, 45, 0.832);
+    font-weight:normal;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18px;
+    font-weight: 400;
+}
+.info-products-title-on-or-off{
+    color: orange;
+    font-size:20px;
+    font-weight: bold;
+}
+.info-products-title-on-or-off-W{
+    color: rgba(220, 154, 31, 0.932);
+    font-weight:normal;
+}
+/*Configure a lógica do [ngClass]=""
+.info-products-title-on-or-off-W {
+    color:green;
+    font-size:20px;
+}
+.info-products-title-on-or-off-W .No{
+    color:red;
+    font-size:20px;
+}
+*/
+.info-products-chest{
+    color: rgba(220, 154, 31, 0.932);
+    font-weight:normal;
+}
+.info-products-buy{
+    color: rgba(220, 154, 31, 0.932);
+    font-weight:normal;
+}
+.info-products-title-quantidade{
+    color:goldenrod;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

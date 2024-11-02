@@ -1,0 +1,17 @@
+section{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+}
+h1{
+    font-size:70px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+}
+i{
+    padding-top:20px;
+    font-size:80px;
+    color: gold;
+}

@@ -1,0 +1,32 @@
+<section>
+    <div class="conteiner">
+        <div class="img-conteneir">
+            <img [src]="my_product?.imagem" alt="">
+        </div>
+        <div class="info-products-conteneir">
+            <h2 class="info-products-title">
+                Produto: <span class="title-info-style">{{my_product?.nome}}</span> 
+            </h2>
+            <h2 class="info-products-title-subtitle">
+                Descrição: <span class="subtitle-info-style">{{my_product?.description}}</span>
+            </h2>
+            <p>
+                Disponivel: <span class="info-products-title-on-or-off-W">{{my_product?.disponivel ? "Sim" : "Não"}}</span>
+            </p>
+            <p>
+                Estoque: <span class="info-products-chest">{{my_product?.estoque}}</span>
+            </p>
+            <p>
+                Preço: <span class="info-products-buy">{{my_product?.custo | currency : "BRL"}}</span>
+            </p>
+            <label class="info-products-title-quantidade">
+               <span class="info-products-title-quantidade-name">Quantidade:</span>
+                <input type="number" [(ngModel)]="quantidade" min="1">
+                unidades(s)
+            </label>
+            <button type="button" (click)="addNotificacao()">
+                Comprar
+            </button>
+        </div>
+    </div>
+</section>

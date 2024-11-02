@@ -1,0 +1,86 @@
+section{
+    display: flex;
+    column-gap:10px;
+    justify-content:space-between;
+    padding:15px;
+    margin-bottom:20px;
+    box-shadow: 0px 8px 20px lightsalmon;
+}
+form{
+   display:flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items:center;
+   box-shadow: 1px 1px 10px rgb(225, 225, 225);
+   padding-left:10px;
+   padding-right:10px;
+}
+input, textarea{
+    box-sizing: border-box;
+    border-width:0px 0px 2.5px 0px;
+    width:700px;   
+    outline:none;
+    height:50px;
+    padding-top:20px;
+    font-size:16px;
+    text-align:start;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+textarea{
+    font-size:14px;
+    height:70px;
+}
+button{
+    box-sizing: content-box;
+    padding:10px;
+    width:110px;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    color:darkorange;
+    background-color:rgb(235, 235, 235);
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(225, 225, 225);
+}
+button:disabled{
+    display:none;
+}
+address{
+    padding-left:5px;
+    border:2px solid rgb(245, 245, 245);
+    border-width:0px 0px 0px 2px;
+}
+.title-conato{
+    box-sizing:border-box;
+    height:50px;
+    padding:20px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    letter-spacing:2px;
+    font-size:45px;
+    text-align: start;
+    color:#ffd700;
+}
+.title-subtitle-conato{
+    box-sizing:border-box;
+    margin-bottom:0;
+    height:70px;
+    padding:20px 0px 0px 0px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size:22px;
+    text-align: start;
+    color:#daa520;
+}
+.title-subtitle-conato-addresss{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size:22px;
+    text-align: start;
+    color:#daa520;
+}
+.erro-mensage{
+    color: red
+}

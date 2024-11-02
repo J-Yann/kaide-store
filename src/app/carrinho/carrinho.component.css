@@ -1,0 +1,113 @@
+
+img{
+    border-radius:10px 0px 0px 10px;
+}
+input{
+    box-sizing:border-box;
+    width:50px;
+    height:40px;
+    padding:5px;
+    background-color:lightsalmon;
+    border:none;
+    border-radius:10px;
+    text-align:center;
+    color:white;
+    font-size:20px;
+}
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+/*Para navegador mozila*/
+input[type=number]{
+    -moz-appearance:none;
+}
+.title{
+    box-sizing:border-box;
+    height:70px;
+    padding:20px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size:45px;
+    text-align: center;
+    color:gold;
+}
+.conteiner-list-products{
+    display:flex;
+    align-items: center;
+    column-gap:20px;
+    height:100px;
+    box-shadow: 1px 1px 10px orange;
+    border: 2px solid orange;
+    border-radius:10px 10px;
+    transition:2s ease;
+}
+.conteiner-list-products:hover{
+    box-shadow: 1px 1px 30px orange;
+}
+.about{
+    font-family:Verdana, sans-serif;
+    width:100%;
+}
+.title-product{
+    font-size:20px;
+    font-weight:600;
+    color:orange;
+}
+.price-product{
+    color:goldenrod;
+}
+.confirmation-product{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:600;
+    color:darkorange;
+    font-size:15px;
+}
+.quantia-style{
+    color:goldenrod;
+    font-size:15px;
+}
+.remove-buy{
+    box-sizing: border-box;
+    height:100px;
+    border:none;
+    border-radius:0px 8px 8px 0px;
+    width:100px;
+    font-size:50px;
+    color:orange;
+    background-color:rgb(245, 245, 245);
+    cursor: pointer;
+}
+.remove-buy:hover{
+    background-color:rgb(235, 235, 235);
+}
+.buy-total{
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:10px 10px;
+}
+.title-buy-total{
+    text-align: center;
+    font-weight:bold;
+    color: orange;
+}
+.title-buy-total-valor{
+    color: goldenrod;
+
+}
+.check-buy-total{   
+    box-sizing: content-box;
+    padding:10px;
+    width:110px;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    color:darkorange;
+    background-color:rgb(235, 235, 235);
+    cursor: pointer;
+}
+.check-buy-total:hover{
+    background-color:rgb(225, 225, 225);
+}

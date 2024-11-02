@@ -1,0 +1,23 @@
+<section class="product-all">
+    <div class="product-list" *ngFor=" let produtos of my_products">
+        <a>
+            <img [src]="produtos.imagem" height="200" width="200" alt="produto">
+            <p class="name-product-list">
+                <b>{{ produtos.nome }}</b>
+            </p>
+            <p class="product-money">
+                Preço: {{ produtos.custo | currency: "BRL"}}
+            </p>
+            <button routerLink="/produtos/{{produtos.id_produto}}" class="product-vision" type="button">
+                Detalhes
+            </button>
+        </a>
+    </div>
+</section>
+<!--
+    Obs.:
+    routerLink="/produtos/{{produtos.id_produto}}"
+
+    Ao clicar em 'Detalhes' na URL (/produtos/) vai ser direcionado para uma nova página deacordo com meu ID do produto que será 
+    mostrado na URL.
+-->

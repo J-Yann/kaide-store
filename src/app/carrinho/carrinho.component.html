@@ -1,0 +1,33 @@
+<h1 class="title"><span class="title-decoration-C">C</span>arrinho</h1>
+<section *ngIf="itens_do_carrinho.length > 0; else semProdutos">
+   <ul>
+        <li class="conteiner-list-products" *ngFor=" let itensCarrinho_frame of itens_do_carrinho">
+            <img [src]="itensCarrinho_frame.imagem" height="100" width="100" alt="imagem do produto" />
+            <div class="about">
+                <h2 class="title-product">
+                    Nome do produto: {{ itensCarrinho_frame.nome }}
+                </h2>
+                <p class="price-product">
+                    Preço do produto: {{ itensCarrinho_frame.custo | currency : "BRL" }}
+                </p>
+            </div>
+            <div class="confirmation-product">
+                <label> 
+                    <input type="number" [(ngModel)]="itensCarrinho_frame.quantidade" (change)="calcularTotal()">
+                                                                                        <!-- Para captura qualquer tipo de alteração no input e passar para o meu metódo -->
+                </label>
+            </div>
+            <button class="remove-buy" (click)="removerProduto(itensCarrinho_frame.id_produto)"><i class="fa-solid fa-xmark"></i></button>
+        </li>
+   </ul> 
+    <div class="buy-total">
+        <h2 class="title-buy-total">Total: <span class="title-buy-total-valor">{{ total | currency : "BRL" }}</span></h2>
+        <button class="check-buy-total" (click)="compraTudo()">Compra total</button>
+    </div>
+</section>
+<!--
+Para mostrar se não há produtos no meu carrinho. Para mais detalhes consulte a nota extras
+-->
+<ng-template #semProdutos>
+    Você não possui produtos no carrinho!
+</ng-template>
